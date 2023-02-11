@@ -1,0 +1,8 @@
+/* custom style */
+#email_error, #password_error {
+    color: red;
+    line-height: 0.8rem;
+    font-size: small;
+    margin-bottom: 1.5rem;
+    margin-top: 0.33rem;
+}

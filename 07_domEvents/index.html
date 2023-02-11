@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- FontAwesome6 -->
+    <script src="https://kit.fontawesome.com/dade034416.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap 5 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main Content -->
+    <div class="container">
+      <!-- onclick -->
+      <button id="btnSuccessOnClick" onclick="alert(`This button is clicked`)" type="button" class="btn btn-outline-success mt-5">Success (onclick)</button>
+
+      <button onclick="changePicHandler(event, 5, 1)" type="button" class="btn btn-outline-primary mt-5">Change Pic</button>
+
+      <button id="btnChangePic" type="button" class="btn btn-outline-warning mt-5">Change Pic AddEventListener</button>
+
+      <!-- <button type="button" class="btn btn-outline-success mt-5">Success</button> -->
+      <div class="main mt-3">
+        <img id="imgTarget" src="./img/01.jpg" alt="">
+      </div>
+
+      <br>
+      <div class="container">
+        <form action="" class="border border-3 border-success m-3 p-3 rounded-3 mx-auto">
+          <div class="my-3">
+            <div class="input-group my-3 input-group-sm">
+              <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+              <input type="text" id="username" class="form-control" placeholder="Username">
+              <!-- <label for="username">Username</label> -->
+            </div>
+            <div class="input-group my-3 input-group-sm">
+              <span class="input-group-text"><i class="fa-solid fa-key"></i></span>
+              <input type="password" id="pw" class="form-control" placeholder="Password">
+              <!-- onmousedown & onmouseup -->
+              <button class="input-group-text" type="button" id="btnEye"><i class="fa-solid fa-eye-slash"></i></button>
+               <!-- onmousedown & onmouseup () -->
+            </div>
+          </div>
+          <div class="my-3 d-flex justify-content-end">
+            <button type="submit" class="btn btn-outline-success me-3">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <!-- Bootstrap 5 -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+</body>
+</html>
